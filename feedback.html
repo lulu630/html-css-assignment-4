@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Craftsvilla</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <header>
+        <a href="index.html" class="logo">CRAFTSVILLA</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="booking.html">Workshops</a></li>
+                <li><a href="gallery.html">Galleri</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </nav>
+        <a href="booking.html" class="cta">Bestill workshop</a>
+    </header>
+
+    <section class="feedback-intro">
+        <h2>Vi vil gjerne høre fra deg!</h2>
+        <p>Tilbakemeldingene dine hjelper oss å gjøre workshopene våre enda bedre. Del gjerne opplevelsen din med oss - hva du likte, og hva vi kan forbedre.</p>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <form class="feedback-form">
+                <label for="name">Fullt navn:</label>
+                <input type="text" id="name" name="name" placeholder="Ola Nordmann" required>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" placeholder="ola.nordmann@epost.no" required>
+
+                <label for="workshop">Workshop du deltok på:</label>
+                <select id="workshop" name="workshop">
+                <option value="akvarell">Akvarellmaling</option>
+                <option value="lerret">Lerretsmaling</option>
+                <option value="mosaikk">Mosaikkkunst</option>
+                </select>
+
+                <label for="favorite">Hva likte du best?</label>
+                <textarea id="favorite" name="favorite" rows="3" placeholder="Skriv teksten her.."></textarea>
+
+                <label for="improve">Hva kan vi forbedre?</label>
+                <textarea id="improve" name="improve" rows="3" placeholder="Skriv teksten her.."></textarea>
+
+                <p class="feedback-question">Vil du anbefale workshopen til andre?</p>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="recommend" value="yes">
+                        Ja
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommend" value="no">
+                        Nei
+                    </label>
+                </div>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="newsletter">
+                    <p>Jeg vil motta nyheter om kommende workshops</p>
+                </label>
+
+                <label for="photo">Last opp et bilde fra workshopen (valgfritt):</label>
+                <input type="file" id="photo" name="photo">
+
+                <button type="submit">Send tilbakemelding</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <article class="testimonial-card">
+            <h3>Anna, 34</h3>
+            <p>En veldig hyggelig opplevelse! Atmosfæren var avslappet og inspirerende, og det var gøy å skape noe eget selv uten erfaring.</p>
+            <div class="rating">★★★★★</div>
+        </article>
+        <article class="testimonial-card">
+            <h3>Marius, 41</h3>
+            <p>Perfekt aktivitet å gjøre sammen med venner. Alt av materialer var klart, og veiledningen gjorde det enkelt å komme i gang.</p>
+            <div class="rating">★★★★★</div>
+        </article>
+        <article class="testimonial-card">
+            <h3>Inger, 67</h3>
+            <p>Jeg kom hit sammen med barnebarnet mitt, og vi hadde det så fint. En koselig aktivitet hvor vi kunne være kreative sammen.</p>
+            <div class="rating">★★★★★</div>
+        </article>
+    </section>
+
+      <footer>
+        <div class="container">
+            <div class="footer-about">
+                <h2>CRAFTSVILLA</h2>
+                <p>Kreative workshops hvor mennesker møtes, skaper og slapper av sammen.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt oss</h3>
+                <address>
+                    Bergen, Agnes Mowinckelsgate 6
+                    <a href="mailto:info@craftsvilla.no">info@craftsvilla.no</a>
+                    <a href="tel:+4700000000">+47 123 45 678</a>
+                </address>
+            </div>
+            <div class="footer-social">
+                <a href=""><img src="./images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+                <a href=""><img src="./images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+                <a href=""><img src="./images/youtube-svgrepo-com.svg" alt="YouTube"></a>
+                <a href=""><img src="./images/pinterest-180-svgrepo-com.svg" alt="Pinterest"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

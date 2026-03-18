@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Craftsvilla</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="booking-page">
+    <header>
+        <a href="index.html" class="logo">CRAFTSVILLA</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="booking.html" class="active">Workshops</a></li>
+                <li><a href="gallery.html">Galleri</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <a href="booking.html" class="cta">Bestill workshop</a>
+    </header>
+
+    <section class="booking-intro">
+        <h2>Bestill din workshop</h2>
+        <p>Hos CRAFTSVILLA kan du utforske ulike kunstaktiviteter i en avslappet og inspirerende atmosfære. Alle materialer er inkludert, og ingen tidligere erfaring er nødvendig. Bare møt opp og skap noe sammen med andre!</p>
+    </section>
+    <section class="booking-workshop-list">
+        <div class="container">
+            <article class="workshop-card">
+                <img src="./images/aquarell.jpg" alt="Akvarellmaling med pensler og farger">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="workshop-title">AKVARELLMALING</h3>
+                        <p class="price">200 kr</p>
+                    </div>
+                        <p>Mal et motiv med akvarellfarger og lær enkle teknikker.</p>
+
+                    <a href="booking.html">Bestill nå</a>
+                </div>
+            </article>
+            <article class="workshop-card">
+                <img src="./images/canvas.jpg" alt="Lerretsmaling med pensel pa lerret">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="workshop-title">LERRETSMALING</h3>
+                        <p class="price">300 kr</p>
+                    </div>
+                        <p>Mal på lerret med akrylfarger og skap ditt eget kunstverk.</p>
+
+                    <a href="booking.html">Bestill nå</a>
+                </div>
+            </article>
+            <article class="workshop-card">
+                <img src="./images/mosaic.jpg" alt="Mosaikkunst med fargede biter">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="workshop-title">MOSAIKKUNST</h3>
+                        <p class="price">400 kr</p>
+                    </div>
+                    <p>Lag et mosaikkmotiv ved å sette sammen små fargede steiner.</p>
+                    <a href="booking.html">Bestill nå</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="booking">
+        <div class="container">
+            <form class="booking-form">
+                <label for="fullname">Fullt navn:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Ola Nordmann" required>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" placeholder="ola.nordmann@epost.no" required>
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+47 123 45 678" required>
+                <label for="date">Foretrukket dato:</label>
+                <input type="date" id="date" name="date" lang="no">
+                <label for="time">Foretrukket klokkeslett:</label>
+                <input type="time" name="time" id="time">
+                <label for="workshop">Velg workshop:</label>
+                <select id="workshop" name="workshop">
+                    <option value="akvarell">Akvarellmaling</option>
+                    <option value="lerret">Lerretsmaling</option>
+                    <option value="mosaikk">Mosaikkunst</option>
+                </select>
+                <label for="message">Spesielle ønsker:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Skriv teksten her.."></textarea>
+                <button type="submit">Send bestilling</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-about">
+                <h2>CRAFTSVILLA</h2>
+                <p>Kreative workshops hvor mennesker møtes, skaper og slapper av sammen.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt oss</h3>
+                <address>
+                    Bergen, Agnes Mowinckelsgate 6
+                    <a href="mailto:info@craftsvilla.no">info@craftsvilla.no</a>
+                    <a href="tel:+4700000000">+47 123 45 678</a>
+                </address>
+            </div>
+            <div class="footer-social">
+                <a href=""><img src="./images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+                <a href=""><img src="./images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+                <a href=""><img src="./images/youtube-svgrepo-com.svg" alt="YouTube"></a>
+                <a href=""><img src="./images/pinterest-180-svgrepo-com.svg" alt="Pinterest"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
